@@ -10,7 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
-    /* scrollbar-color:var(--backgroundColor) var(--secondarybackgroundColor); */
+    scrollbar-color:var(--Darkcolor) var(--background);
     scrollbar-width: auto; 
 
 }
