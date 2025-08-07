@@ -207,9 +207,9 @@ p{
             flex-wrap: wrap;
             gap: 50px 0px;
             .product-card{
+                transition: 0.3s all;
                 background-color: var(--Darkcolor);
                 border-radius: 25px;
-                box-shadow: 5px 0px 20px 6px #bababb;
                 width: 32%;
                 height: 450px;
                 margin-top: 10px;
@@ -310,6 +310,10 @@ p{
                         }
                     }
                 } */
+            }
+            .product-card:hover{
+                transform: translateY(-15px);
+                box-shadow: 5px 14px 20px 6px #bababb;
             }
         }
         .btn{
