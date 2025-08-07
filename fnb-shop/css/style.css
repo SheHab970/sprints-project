@@ -621,6 +621,26 @@ footer{
     }
    }
 
+   /* Hero  */
+   .Hero{
+    .hero-content{
+        .hero-body{
+            .main-content{
+                h1{
+                    font-size: 2.8rem;
+                }
+                p{
+                    width: 100%;
+                }
+            }
+            .buton{
+                margin-left: 0px;
+                padding: 12px 0px;
+            }
+        }
+    }
+   }
+
    /* Products  */
    .products{
     .products-body{
