@@ -400,6 +400,161 @@ p{
     }
 }
 
+/*//////////// contact page  ///////////*/
+
+.contact-page{
+    align-content: center;
+    padding: 80px 0px;
+    margin-top: 30px;
+    .contact-body{
+        /* background-color: var(--Darkcolor); */
+        .sectiom-head{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .section_header{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 3rem 0px;
+                h1{
+                    font-size: 5rem;
+                    color: var(--MainColor);
+                    padding-bottom: 10px;
+                }
+            }
+            .heser_animation{
+                width: 70%;
+                height: 6px;
+                background-color: var(--RedColor);
+                border-radius: 15pc;
+                
+            }
+        }
+        .main-content{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 0px 50px;
+            .head{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                .header{
+                    margin-bottom: 25px;
+                    h2{
+                        font-size: 4rem;
+                        color: var(--background);
+
+                    }
+                    span{
+                        font-size: 4.5rem;
+                        color: var(--MainColor);
+                    }
+                }
+                .contact{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .contact-box{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        i{
+                            font-size: 26px;
+                            padding: 8px;
+                            color: var(--MainColor);
+                        }
+                        p{
+                            margin: 0;
+                            color: var(--background);
+                            font-size: 16px;
+                        }
+                    }
+                    .social{
+                        margin-top: 30px;
+                        .social-header{
+                            h4{
+                                font-size: 2rem;
+                                color: var(--newcolor);
+                            }
+                        }
+                        .icons{
+                            display: flex;
+                            gap: 10px;
+                            a{
+                                text-decoration: none;
+                                font-size: 32px;
+                                padding: 10px 8px;
+                                color: var(--background);
+                                i{
+                                    border-radius: 50%;
+                                    transition: 0.4s;
+                                    &:hover{
+                                        transform: translateY(-5px);
+                                        box-shadow: 0px 11px 13px 0px rgba(0, 0, 0, 0.6);
+                                        color: var(--Darkcolor);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .form-part{
+                width: 60%;
+                .form-body{
+                    position: relative;
+                    width: 100%;
+                    form{
+                        width: 100%;
+                        .input-feild{
+                            position: relative;
+                            padding-bottom: 18px;
+                            margin-bottom: 10px;
+                            width: 100%;
+                            input,textarea{
+                                width: 100%;
+                                padding: 18px 20px;
+                                border-radius: 6px;
+                                outline: none;
+                                border: none;
+                                background-color: var(--background);
+                                color: var(--LightText);
+                                &::placeholder{
+                                    color: var(--LightText);
+                                }
+                                &:focus{
+                                    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
+                                }
+                            }
+                            textarea{
+                                height: 150px;
+                            }
+                            button{
+                                border: none;
+                                outline: none;
+                                background-color: var(--RedColor);
+                                color: white;
+                                padding: 10px 45px;
+                                border-radius: 8px;
+                                transition: 0.3s;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: var(--HoverColor);
+                                }
+                                &:active{
+                                    transform: scale(0.9);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
 /*//////////// footer  ////////////*/
 
 footer{
@@ -730,7 +885,7 @@ footer{
                     width: 100%;
                     padding: 15px 15px;
                     .after-effect::after{
-                        top: 30%;
+                        top: 25%;
                         right: 6%;
                         height: 5px;
                         width: 87%;
@@ -755,6 +910,66 @@ footer{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    /*///////////// contact page  /////////////*/
+
+    .contact-page{
+        padding: 0px 0px;
+        margin-top: 0px;
+        .contact-body{
+            margin-bottom: 7rem;
+            .sectiom-head{
+                .section_header{
+                    padding: 3rem 0px 1.5rem 0px !important;
+                    margin: 15px 0px;
+                    h1{
+                        font-size: 2.28rem !important;
+                    }
+                }
+            }
+            .main-content{
+                flex-wrap: wrap;
+                padding: 0px 10px !important;
+                .head{
+                    width: 100% !important;
+                    margin-bottom: 15px !important;
+                    .header{
+                        margin-bottom: 15px;
+                        h2{
+                            font-size: 2rem !important;
+    
+                        }
+                        span{
+                            font-size: 2.3rem !important;
+                        }
+                    }
+                    .contact{
+                        .contact-box{
+                            i{
+                                font-size: 20px !important;
+                                padding: 8px !important;
+                            }
+                            p{
+                                font-size: 14px !important;
+                            }
+                        }
+                        .social{
+                            margin-top: 0px !important;
+                            .icons{
+                                a{
+                                    font-size: 24px;
+                                    padding: 10px 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .form-part{
+                    width: 100% !important;
                 }
             }
         }
