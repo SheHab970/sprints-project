@@ -494,6 +494,9 @@ footer{
                         gap: 5px;
                         margin-bottom: 15px;
                         a{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
                             text-decoration: none;
                             color: var(--LightText);
                             span{
@@ -505,7 +508,7 @@ footer{
                         i{
                             font-size: 20px;
                             padding: 8px;
-                            color: var(--yallow);
+                            color: var(--MainColor);
                         }
                         p{
                             margin: 0;
@@ -584,6 +587,8 @@ footer{
 
 /* for mobile screen */
 @media (min-width : 280px) and (max-width : 767px){   
+
+    /* Nav bar  */
    .nav_bar{
     bottom: 0%;
     top: auto;
@@ -615,4 +620,71 @@ footer{
         }
     }
    }
+
+   /* Footer  */
+    .footer-sec{
+    padding-bottom: 60px;
+    .footer-body{
+        .main-content{
+            padding: 0px 10px;
+            gap: 2.5rem;
+            .logo{
+                width: 100% !important;
+                .head{
+                    justify-content: center;
+                    margin: 0;
+                    .image{
+                        width: 12%;
+                    }
+                    .name{
+                        h3{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .links{
+                width: 100% !important;
+                padding-left: 0;
+                align-items: center;
+                h4{
+                    padding-bottom: 2px;
+                    margin-bottom: 20px;
+                }
+                ul{
+                    gap: 8px;
+                }
+            }
+            .contact{
+                width: 100% !important;
+                align-items: center;
+                h4{
+                    padding-bottom: 2px;
+                    margin-bottom: 20px;
+                }
+                .contact-box{
+                    margin-bottom: 5px;
+                }
+            }
+            .icons{
+                padding: 20px 0px;
+                a{
+                    i{
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+        .copyrignt{
+            margin-bottom: 40px;
+            p{
+                text-align: center;
+                font-size: 15.5px;
+            }
+            &::before{
+                top: 7%;
+            }
+        }
+    }
+}
 }
