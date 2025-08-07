@@ -191,9 +191,21 @@ p{
 .products{
     .products-body{
         padding: 90px 0px;
+        .products-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0px;
+            h1{
+                font-size: 40px;
+                font-weight: 800;
+            }
+        }
         .products-content{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px 0px;
             .product-card{
                 background-color: var(--Darkcolor);
                 border-radius: 25px;
